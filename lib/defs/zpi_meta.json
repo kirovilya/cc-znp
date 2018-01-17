@@ -1,4 +1,17 @@
 {
+    "NWK": {
+        "pollInd": {
+            "type": 2,
+            "cmdId": 139,
+            "params": {
+                "req": [
+                    {
+                        "nwkAddr": 1
+                    }
+                ]
+            }
+        }
+    },
     "SYS": {
         "resetReq": {
             "type": 2,

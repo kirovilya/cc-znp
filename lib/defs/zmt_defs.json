@@ -277,6 +277,9 @@
         "srngGen": 76,
         "bindAddEntry": 77
     },
+    "NWK": {
+        "pollInd": 139
+    },
     "DBG": {
         "setThreshold": 0,
         "msg": 128
