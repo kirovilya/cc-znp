@@ -745,6 +745,18 @@
                 ]
             }
         },
+        "checksum": {
+            "type": 1,
+            "cmdId": 30,
+            "params": {
+                "req": [],
+                "rsp": [
+                    {
+                        "checksum": 2
+                    }
+                ]
+            }
+        },
         "resetInd": {
             "type": 2,
             "cmdId": 128,
