@@ -5096,5 +5096,24 @@
                 ]
             }
         }
+    },
+    "APP_CFG": {
+        "bdbCommissioningInd": {
+            "type": 2,
+            "cmdId": 128,
+            "params": {
+                "req": [
+                    {
+                        "status": 0
+                    },
+                    {
+                        "commissioningMode": 0
+                    },
+                    {
+                        "remainingModes": 0
+                    }
+                ]
+            }
+        }
     }
 }

@@ -15,7 +15,8 @@
         "SAPI": 6,
         "UTIL": 7,
         "DBG": 8,
-        "APP": 9
+        "APP": 9,
+        "APP_CFG": 15
     },
     "ParamType": {
         "uint8": 0,
@@ -289,5 +290,8 @@
         "msg": 0,
         "userTest": 1,
         "zllTlInd": 129
+    },
+    "APP_CFG": {
+        "bdbCommissioningInd": 128
     }
 }
