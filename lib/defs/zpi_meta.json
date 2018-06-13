@@ -6,7 +6,7 @@
             "params": {
                 "req": [
                     {
-                        "nwkAddr": 1
+                        "nwkaddr": 1
                     }
                 ]
             }
