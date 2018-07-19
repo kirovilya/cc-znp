@@ -1,8 +1,7 @@
 var expect = require('chai').expect,
-    Chance = require('chance'),
-    chance = new Chance();
+    CCZnp = require('../index');
 
-var ccznp = require('../index');
+var ccznp = new CCZnp();
 
 describe('Signature Check', function () {
     it('ccznp.init(spCfg[, callback])', function () {
@@ -123,7 +122,7 @@ describe('Functional Check', function () {
     });
 
     it('event: data', function (done) {
-        var data = { sof: 254, len: 5, type: 3, subsys: 1, cmd: 2, payload: new Buffer([0, 1, 2, 3, 4]), fcs: 100, csum: 100 },
+        var data = { sof: 254, len: 5, type: 3, subsys: 1, cmd: 2, payload: new Buffer([0, 1, 2, 3, 4, 0, 0, 0, 0]), fcs: 100, csum: 100 },
             dataEvtFlag = false;
 
         ccznp.on('data', function (msg) {
@@ -137,7 +136,8 @@ describe('Functional Check', function () {
                     product: 1,
                     majorrel: 2,
                     minorrel: 3,
-                    maintrel: 4
+                    maintrel: 4,
+                    revision: 0
                 };
 
             for (var key in result) {
