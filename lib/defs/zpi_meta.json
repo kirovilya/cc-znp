@@ -1,4 +1,17 @@
 {
+    "NWK": {
+        "pollInd": {
+            "type": 2,
+            "cmdId": 139,
+            "params": {
+                "req": [
+                    {
+                        "nwkaddr": 1
+                    }
+                ]
+            }
+        }
+    },
     "SYS": {
         "resetReq": {
             "type": 2,
@@ -729,6 +742,18 @@
                 "rsp": [
                     {
                         "status": 0
+                    }
+                ]
+            }
+        },
+        "checksum": {
+            "type": 1,
+            "cmdId": 30,
+            "params": {
+                "req": [],
+                "rsp": [
+                    {
+                        "checksum": 2
                     }
                 ]
             }
@@ -5073,19 +5098,20 @@
             }
         }
     },
-    "DEBUG": {
-        "bdbStartCommissioning": {
-            "type": 1,
-            "cmdId": 5,
+    "APP_CFG": {
+        "bdbCommissioningInd": {
+            "type": 2,
+            "cmdId": 128,
             "params": {
                 "req": [
                     {
-                        "mode": 0
-                    }
-                ],
-                "rsp": [
-                    {
                         "status": 0
+                    },
+                    {
+                        "commissioningMode": 0
+                    },
+                    {
+                        "remainingModes": 0
                     }
                 ]
             }

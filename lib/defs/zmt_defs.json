@@ -16,7 +16,7 @@
         "UTIL": 7,
         "DBG": 8,
         "APP": 9,
-        "DEBUG": 15
+        "APP_CFG": 15
     },
     "ParamType": {
         "uint8": 0,
@@ -73,6 +73,7 @@
         "zdiagsSaveStatsToNv": 27,
         "osalNvReadExt": 28,
         "osalNvWriteExt": 29,
+        "checksum": 30,
         "nvCreate": 48,
         "nvDelete": 49,
         "nvLength": 50,
@@ -278,6 +279,9 @@
         "srngGen": 76,
         "bindAddEntry": 77
     },
+    "NWK": {
+        "pollInd": 139
+    },
     "DBG": {
         "setThreshold": 0,
         "msg": 128
@@ -287,7 +291,7 @@
         "userTest": 1,
         "zllTlInd": 129
     },
-    "DEBUG": {
-        "bdbStartCommissioning": 5
+    "APP_CFG": {
+        "bdbCommissioningInd": 128
     }
 }
