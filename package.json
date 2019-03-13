@@ -36,7 +36,7 @@
   "dependencies": {
     "debug": "^4.1.1",
     "enum": "^2.5.0",
-    "serialport": "^7.1.4",
+    "serialport": "^6.2.2",
     "unpi": "^1.1.0"
   },
   "devDependencies": {
