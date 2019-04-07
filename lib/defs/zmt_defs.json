@@ -16,7 +16,7 @@
         "UTIL": 7,
         "DBG": 8,
         "APP": 9,
-        "DEBUG": 15
+        "APP_CNF": 15
     },
     "ParamType": {
         "uint8": 0,
@@ -287,7 +287,9 @@
         "userTest": 1,
         "zllTlInd": 129
     },
-    "DEBUG": {
-        "bdbStartCommissioning": 5
+    "APP_CNF": {
+        "bdbStartCommissioning": 5,
+        "bdbSetChannel": 8,
+        "bdbComissioningNotifcation": 128
     }
 }
