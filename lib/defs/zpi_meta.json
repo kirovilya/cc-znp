@@ -5096,7 +5096,9 @@
             "params": {
                 "req": [
                     {
-                        "isPrimary": 0,
+                        "isPrimary": 0
+                    },
+                    {
                         "channel": 2
                     }
                 ],
